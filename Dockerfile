@@ -12,7 +12,7 @@ RUN  apt-get update \
      && apt-get update \
      # We install Chrome to get all the OS level dependencies, but Chrome itself
      # is not actually used as it's packaged in the node puppeteer library.
-     # Alternatively, we could could include the entire dep list ourselves
+     # Alternatively, we could include the entire dep list ourselves
      # (https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
      # but that seems too easy to get out of date.
      && apt-get install -y google-chrome-stable \
